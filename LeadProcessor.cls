@@ -36,7 +36,7 @@ public with sharing class LeadProcessorTest {
         Test.stopTest();
 
         //Check the results
-        List<Lead> updateLeads = [SELECT Id FROM Lead WHERE LeadSource = 'Dreamforce'];
+        List<Lead> updatedLeads = [SELECT Id FROM Lead WHERE LeadSource = 'Dreamforce'];
         System.assertEquals(200, updateLeads.size(), 'Error: at least 1 record not updated correctly');
 
     }
